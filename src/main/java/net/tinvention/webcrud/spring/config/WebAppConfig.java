@@ -35,10 +35,4 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
 		dataSource.setPassword("1111");
 		return dataSource;
 	}
-
-	public void logging() {
-		URL loggingPath = getClass().getResource("/log4j.xml");
-		DOMConfigurator.configure(loggingPath);
-	}
-
 }
